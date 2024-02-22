@@ -18,11 +18,15 @@ function App() {
     )
   })
 
+  function handleAboutus(){
+    window.open("src/components/Aboutus.jsx")
+  }
+
   return (
     <>
       <Navbar />
       <HomePageBody />
-      <section className='flex flex-nowrap p-10 '>
+      <section className='flex flex-nowrap pt-10'>
         {cards}
       </section>
       <Footer />

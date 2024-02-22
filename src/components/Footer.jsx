@@ -3,7 +3,7 @@ import React from "react"
 export default function(){
     return (
         <>
-            <div className="flex flex-nowrap w-full justify-center items-center text-center text-white divide-x-2 divide-slate-600 mb-10">
+            <div className="flex flex-nowrap w-full justify-center items-center text-center text-white divide-x-2 divide-slate-600 mb-5">
                 <div className="">
                     <h3 className="py-5 font-semibold text-lg">Contact us</h3>
                     <h4 className="text-[#B6BBC4]">Email: hibiks@pict.edu</h4>
@@ -21,9 +21,6 @@ export default function(){
                     </div>
                 </div>
             </div>
-            <footer className="sticky flex justify-center">
-            <small className="text-white content-center">Developed with ❤️</small>
-            </footer>
         </>
     )
 }
