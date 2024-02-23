@@ -4,6 +4,7 @@ import HomePageBody from './components/HomePageBody.jsx'
 import ClubCards from './components/ClubCards.jsx'
 import ClubCardData from './components/ClubCardData.js'
 import Footer from './components/Footer.jsx'
+import Aboutus from './components/Aboutus.jsx'
 import './App.css'
 
 function App() {
@@ -24,12 +25,13 @@ function App() {
 
   return (
     <>
-      <Navbar />
+     <Aboutus />
+      {/* <Navbar />
       <HomePageBody />
       <section className='flex flex-nowrap pt-10'>
         {cards}
       </section>
-      <Footer />
+      <Footer /> */}
     </>
   )
   
