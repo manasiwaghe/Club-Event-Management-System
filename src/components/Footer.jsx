@@ -14,10 +14,18 @@ export default function(){
                 <div className="ml-10 pl-5">
                     <h3 className="font-semibold text-lg">Follow us</h3>
                     <div className="flex flex-row py-2">
-                        <img className="h-5 px-3 mt-4" src="./public/Twitter.png" />
-                        <img className="h-5 px-3 mt-4" src="./public/Instagram.png" />
-                        <img className="h-5 px-3 mt-4" src="./public/Linkedin.png" />
-                        <img className="h-5 px-3 mt-4" src="./public/Facebook.png" />
+                        <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FPunePict">
+                            <img className="h-6 px-3 mt-4 hover:cursor-pointer hover:h-7" src="./public/Twitter.png" />
+                        </a>
+                        <a href="https://www.instagram.com/pict.pune?igsh=MThzMXh3NW1teDc2cQ==">
+                            <img className="h-5 px-3 mt-4 hover:cursor-pointer hover:h-7" src="./public/Instagram.png" />
+                        </a>
+                        <a href="https://www.linkedin.com/school/pune-institute-of-computer-technology/">
+                            <img className="h-5 px-3 mt-4 hover:cursor-pointer hover:h-7" src="./public/Linkedin.png" />
+                        </a>
+                        <a href="https://www.facebook.com/PICTOfficial">
+                            <img className="h-5 px-3 mt-4 hover:cursor-pointer hover:h-7" src="./public/Facebook.png" />
+                        </a>
                     </div>
                 </div>
             </div>

@@ -5,7 +5,9 @@ import ClubCards from './components/ClubCards.jsx'
 import ClubCardData from './components/ClubCardData.js'
 import Footer from './components/Footer.jsx'
 import Aboutus from './components/Aboutus.jsx'
+import Login from './components/Login.jsx'
 import './App.css'
+import Signup from './components/Signup.jsx'
 
 function App() {
 
@@ -25,13 +27,15 @@ function App() {
 
   return (
     <>
-     <Aboutus />
-      {/* <Navbar />
+    {/* <Login /> */}
+    {/* <Aboutus /> */}
+    {/* <Signup /> */}
+      <Navbar />
       <HomePageBody />
       <section className='flex flex-nowrap pt-10'>
         {cards}
       </section>
-      <Footer /> */}
+      <Footer />
     </>
   )
   
