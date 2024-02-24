@@ -8,6 +8,7 @@ import Aboutus from './components/Aboutus.jsx'
 import Login from './components/Login.jsx'
 import './App.css'
 import Signup from './components/Signup.jsx'
+import Clubpage from './components/Clubpage.jsx'
 
 function App() {
 
@@ -30,12 +31,15 @@ function App() {
     {/* <Login /> */}
     {/* <Aboutus /> */}
     {/* <Signup /> */}
-      <Navbar />
+
+      {/* <Navbar />
+      <Clubpage /> */}
+      {/* <Navbar />
       <HomePageBody />
       <section className='flex flex-nowrap pt-10'>
         {cards}
       </section>
-      <Footer />
+      <Footer /> */}
     </>
   )
   

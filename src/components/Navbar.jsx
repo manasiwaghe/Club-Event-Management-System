@@ -12,7 +12,7 @@ export default function Navbar(){
                 <a className="px-7 font-semibold hover:cursor-pointer hover:text-lg hover:text-[#E5D283]">Highlights</a>
                 <a className="px-7 font-semibold hover:cursor-pointer hover:text-lg hover:text-[#E5D283]">Gallery</a>
                 <a className="px-7 font-semibold hover:cursor-pointer hover:text-lg hover:text-[#E5D283]">About us</a>
-                <button className="text-[#161A30] font-semibold bg-[#F0ECE5] px-5 py-1 rounded-xl hover:cursor-pointer hover:bg-[#E5D283]">Login</button>
+                <button className="text-[#161A30] font-semibold bg-[#F0ECE5] px-5 py-1 rounded-xl hover:cursor-pointer hover:bg-[#E5D283] hover:text-lg">Login</button>
             </div>
 
         </nav>

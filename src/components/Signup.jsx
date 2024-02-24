@@ -5,7 +5,7 @@ export default function Signup(){
 
         < div className="flex flex-col justify-center items-center" >
         
-            <div className="text-white flex flex-col justify-center items-center bg-[#222847]/55 py-12 px-16 rounded-3xl mt-20">
+            <div className="text-white flex flex-col justify-center items-center bg-[#222847]/55 py-16 px-10 rounded-3xl mt-20">
                 <div className="flex flex-col justify-center items-center">
                     <h1 className="text-[#B5C9E5] font-bold text-3xl pb-5">Sign up</h1>
                     <div className="pt-5 pb-5 flex flex-row justify-center items-center">
