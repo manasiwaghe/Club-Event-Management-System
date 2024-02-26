@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom";
 
 export default function Signup(){
     return (
@@ -10,7 +11,8 @@ export default function Signup(){
                     <h1 className="text-[#B5C9E5] font-bold text-3xl pb-5">Sign up</h1>
                     <div className="pt-5 pb-5 flex flex-row justify-center items-center">
                         <h4 className="font-normal ">Already have an account? </h4>
-                        <h4 className="text-[#4F709C] font-bold hover:cursor-pointer">Log in</h4>
+                        <h4 className="text-[#4F709C] font-bold hover:cursor-pointer">
+                            <Link to='/login'>Log in</Link></h4>
                     </div>
                     <div className="flex flex-row justify-center items-center">
                         <input type='text' className=' border-2 border-slate-200 rounded-lg px-5 py-1 mx-1 text-sm w-2/5 text-black' placeholder='First name'></input>

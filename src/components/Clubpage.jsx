@@ -1,8 +1,11 @@
 import React from "react"
+import Navbar from "./Navbar"
+import Footer from "./Footer"
 
 export default function Clubpage(){
     return (
         <>
+            <Navbar />
             <div className="flex flex-row justify-center items-center mx-20 mt-28 sm:mx-10">
                 <div className="flex flex-col justify-center items-center w-1/2">
                     <img src="./LogoMUN.png" className=""></img>
