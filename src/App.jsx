@@ -12,22 +12,9 @@ import Signup from './components/Signup.jsx'
 import Clubpage from './components/Clubpage.jsx'
 import Gallery from './components/Gallery.jsx'
 import Clubs from './components/Clubs.jsx'
+import ClubPageDisp from './components/ClubPageDisp.jsx'
 
 function App() {
-
-  const cards = ClubCardData.map(item => {
-    return (
-      <ClubCards 
-        logo={item.logo}
-        name={item.name}
-        info={item.info}
-        />     
-    )
-  })
-
-  // function handleAboutus(){
-  //   window.open("src/components/Aboutus.jsx")
-  // }
 
   return (
     <>
@@ -39,9 +26,8 @@ function App() {
         <Route path='clubs' element={<Clubs />}></Route>
         <Route path='clubpage' element={<Clubpage />}></Route>
         <Route path='gallery' element={<Gallery />}></Route>
+        <Route path="/club/:id" element={<ClubPageDisp/>}></Route>
       </Routes>
-
-
 
 
     {/* <Login /> */}

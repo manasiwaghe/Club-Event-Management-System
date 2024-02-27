@@ -9,8 +9,10 @@ export default function Clubs(){
     const cards = ClubCardData.map(item => {
         return (
           <ClubCards 
+            id= {item.id}
             logo={item.logo}
             name={item.name}
+            abv={item.abv}
             info={item.info}
             />     
         )
