@@ -1,6 +1,7 @@
 import React from "react"
 import Navbar from "./Navbar"
 import Footer from "./Footer"
+import logoMUN from "./LogoMUN.png"
 
 export default function Clubpage(){
     return (
@@ -8,7 +9,7 @@ export default function Clubpage(){
             <Navbar />
             <div className="flex flex-row justify-center items-center mx-20 mt-28 sm:mx-10">
                 <div className="flex flex-col justify-center items-center w-1/2">
-                    <img src="./LogoMUN.png" className=""></img>
+                    <img src={logoMUN} className=""></img>
                     <h1 className="text-white py-10 font-bold text-3xl">PICT Model United Nations</h1>
                 </div>
                 <div className="text-white flex flex-col justify-center items-center w-1/2 md:px-44 sm:px-20 text-center">

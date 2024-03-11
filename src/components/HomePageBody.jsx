@@ -3,6 +3,8 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import ClubCards from './ClubCards.jsx'
 import ClubCardData from './ClubCardData.js'
+import bg from "./public/bgvector.png"
+import calendar from "./public/calendarImg.png"
 
 export default function HomePageBody(){
         const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -37,7 +39,7 @@ export default function HomePageBody(){
         <Navbar />
         <div className="grid grid-cols-2 place-items-center mx-16 mt-32">
             <div className="body--img h-80 mx-10">
-              <img className="" src="./public/bgvector.png" />
+              <img className="" src={bg} />
             </div>
             <div className="flex flex-col justify-center items-center">
                 <h1 className="text-[#E5D283] text-8xl font-extrabold">CLUBSYNC</h1>
@@ -50,7 +52,7 @@ export default function HomePageBody(){
             <h3 className="text-2xl text-white font-bold pb-8 px-32">Recent Highlights</h3>
             <img className="rounded-md w-4/5 h-80" src={images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} />
           </div>
-            <img src="./public/calendarImg.png" className="w-4/5 h-full rounded-lg" />
+            <img src={calendar} className="w-4/5 h-full rounded-lg" />
         </div>
         <section className='flex flex-nowrap pt-10 pb-10'>
         {cards}
