@@ -7,7 +7,7 @@ export default function Navbar(){
     return (
         <nav className="flex place-content-between items-center">
             <Link to='/'>
-            <img className="nav--logo h-24 cursor-pointer" src="./public/Clubsync-removebg.png" />
+            <img className="nav--logo h-24 cursor-pointer" src="./Clubsync-removebg.png" />
             </Link>
             
             <div className="text-white flex flex-row px-7 ">
