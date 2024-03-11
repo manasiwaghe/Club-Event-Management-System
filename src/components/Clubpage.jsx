@@ -1,7 +1,7 @@
 import React from "react"
 import Navbar from "./Navbar"
 import Footer from "./Footer"
-import logoMUN from "./LogoMUN.png"
+import logoMUN from "/LogoMUN.png"
 
 export default function Clubpage(){
     return (

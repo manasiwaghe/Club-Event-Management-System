@@ -3,8 +3,8 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import ClubCards from './ClubCards.jsx'
 import ClubCardData from './ClubCardData.js'
-import bg from "./bgvector.png"
-import calendar from "./calendarImg.png"
+import bg from "/bgvector.png"
+import calendar from "/calendarImg.png"
 
 export default function HomePageBody(){
         const [currentImageIndex, setCurrentImageIndex] = useState(0);

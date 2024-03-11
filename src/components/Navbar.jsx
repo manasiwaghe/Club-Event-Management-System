@@ -1,7 +1,7 @@
 import React from "react";
 import Aboutus from "./Aboutus";
 import { Link } from "react-router-dom";
-import Logo from "./Clubsync-removebg.png";
+import Logo from "/Clubsync-removebg.png";
 
 export default function Navbar(){
 

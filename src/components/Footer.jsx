@@ -1,8 +1,8 @@
 import React from "react"
-import twitter from "./Twitter.png"
-import instagram from "./Instagram.png"
-import linkedin from "./Linkedin.png"
-import facebook from "./Facebook.png"
+import twitter from "/Twitter.png"
+import instagram from "/Instagram.png"
+import linkedin from "/Linkedin.png"
+import facebook from "/Facebook.png"
 
 export default function(){
     return (
