@@ -1,13 +1,14 @@
 import React from "react";
 import Aboutus from "./Aboutus";
 import { Link } from "react-router-dom";
+import Logo from "./Clubsync-removebg.png";
 
 export default function Navbar(){
 
     return (
         <nav className="flex place-content-between items-center">
             <Link to='/'>
-            <img className="nav--logo h-24 cursor-pointer" src="./Clubsync-removebg.png" />
+            <img className="nav--logo h-24 cursor-pointer" src={Logo} />
             </Link>
             
             <div className="text-white flex flex-row px-7 ">
