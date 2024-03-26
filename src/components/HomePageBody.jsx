@@ -30,12 +30,14 @@ export default function HomePageBody(){
               logo={item.logo}
               name={item.name}
               info={item.info}
+              clubpl={item.clubpl} 
               />     
           )
         })
 
     return (
         <>
+
         <Navbar />
         <div className="grid grid-cols-2 place-items-center mx-16 mt-32">
             <div className="body--img h-80 mx-10">
@@ -47,14 +49,11 @@ export default function HomePageBody(){
                 <input type="text" className="border-2 border-[#E5D283] bg-[#E5D283] rounded-3xl w-2/5 py-2 my-5 placeholder-[#161A30] text-center placeholder-center" placeholder="Search here" />
             </div>
         </div>
-        <div className="grid grid-cols-2 place-items-center mt-52 mb-24">
-          <div className="pl-32">
-            <h3 className="text-2xl text-white font-bold pb-8 px-32">Recent Highlights</h3>
-            <img className="rounded-md w-4/5 h-80" src={images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} />
-          </div>
-            <img src={calendar} className="w-4/5 h-full rounded-lg" />
+        <div className="flex flex-col justify-center items-center mt-44 mb-16">
+            <h3 className="text-2xl text-white font-bold pb-8">Recent Highlights</h3>
+            <img className="rounded-md w-2/5 h-96" src={images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} />
         </div>
-        <section className='flex flex-nowrap pt-10 pb-10'>
+        <section className='flex flex-nowrap py-8 px-10'>
         {cards}
         </section>
         <Footer />

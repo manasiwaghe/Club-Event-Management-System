@@ -9,10 +9,22 @@ import Aboutus from './components/Aboutus.jsx'
 import Login from './components/Login.jsx'
 import './App.css'
 import Signup from './components/Signup.jsx'
-import Clubpage from './components/Clubpage.jsx'
 import Gallery from './components/Gallery.jsx'
 import Clubs from './components/Clubs.jsx'
-import ClubPageDisp from './components/ClubPageDisp.jsx'
+import PrivateRoutes from './utils/PrivateRoutes.jsx'
+import AdminEvent from './components/AdminEvent.jsx'
+import MUN from './components/MUN.jsx'
+import PASC from './components/PASC.jsx'
+import PISB from './components/PISB.jsx'
+import TEDx from './components/TEDx.jsx'
+
+// import { Client } from 'appwrite';
+
+// const client = new Client();
+
+// client
+//     .setEndpoint('https://cloud.appwrite.io/v1')
+//     .setProject('65ee7bb07b8808d3212d');
 
 function App() {
 
@@ -24,29 +36,19 @@ function App() {
         <Route path='login' element={<Login />}></Route>
         <Route path='signup' element={<Signup />}></Route>
         <Route path='clubs' element={<Clubs />}></Route>
-        <Route path='clubpage' element={<Clubpage />}></Route>
         <Route path='gallery' element={<Gallery />}></Route>
-        <Route path="/club/:id" element={<ClubPageDisp/>}></Route>
+        <Route path='PICTMUN' element={<MUN />}></Route>
+        <Route path='PASC' element={<PASC />}></Route>
+        <Route path='PISB' element={<PISB />}></Route>
+        <Route path='TEDxPICT' element={<TEDx />}></Route>
+        <Route path='adminevent' element={<AdminEvent/>}></Route> 
+        
+        {/* <Route element={<PrivateRoutes/>}>
+          <Route path='adminevent' element={<AdminEvent/>}/> 
+        </Route> */}
       </Routes>
-
-
-    {/* <Login /> */}
-    {/* <Aboutus /> */}
-    {/* <Signup /> */}
-    {/* <Gallery /> */}
-
-      {/* <Navbar />
-      <Clubpage /> */}
-      {/* <Navbar />
-      <HomePageBody />
-      <section className='flex flex-nowrap pt-10'>
-        {cards}
-      </section>
-      <Footer /> */}
     </>
   )
-  
-
 }
 
 export default App

@@ -16,10 +16,7 @@ export default function Login(){
                     </div>
                     <input type='text' className=' border-2 border-slate-200 rounded-lg px-5 py-1 text-sm w-full' placeholder='Email'></input>
                     <input type='text' className=' border-2 border-slate-200 rounded-lg px-5 py-1 text-sm mt-4 w-full' placeholder='Password'></input>
-                    <h4 className="text-sm text-left text-[#4F709C] font-medium mt-2">Forgot Password?</h4>
                     <button className="text-center bg-[#E5D283] text-[#213555] w-full rounded-lg mt-5 mb-2 py-1 font-semibold">Login</button>
-                    <h4 className="text-[#F0F0F0]/60 text-sm ">or</h4>
-                    <button className="text-center bg-white text-[#213555] w-full rounded-lg mt-2 py-1 font-semibold">Login with Google</button>
                 </div>
             </div>
 

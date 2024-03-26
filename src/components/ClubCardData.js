@@ -5,7 +5,7 @@ export default[
         name: "PICT Model United Nations",
         abv: "PICTMUN",
         info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        clubpl: '/clubpage/1'
+        clubpl: '/PICTMUN'
     },
     {
         id:2,
@@ -13,7 +13,7 @@ export default[
         name: "PICT ACM Student Chapter",
         abv: "PASC",
         info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        clubpl: '/clubpage/2'
+        clubpl: '/PASC'
     },
     {
         id:3,
@@ -21,7 +21,7 @@ export default[
         name: "PICT IEEE Student Branch",
         abv: "PISB",
         info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        clubpl: '/clubpage/3'
+        clubpl: '/PISB'
     }, 
     {
         id:4,
@@ -29,7 +29,7 @@ export default[
         name: "TEDx PICT",
         abv: "TEDx PICT",
         info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        clubpl: '/clubpage/4'
+        clubpl: '/TEDxPICT'
     },
         
 ]
