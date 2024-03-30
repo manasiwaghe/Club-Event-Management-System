@@ -14,6 +14,7 @@ export default function Clubs(){
             name={item.name}
             abv={item.abv}
             info={item.info}
+            clubpl={item.clubpl} 
             />     
         )
       })

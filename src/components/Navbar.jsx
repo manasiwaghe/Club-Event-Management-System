@@ -7,6 +7,7 @@ export default function Navbar(){
 
     return (
         <nav className="flex place-content-between items-center">
+
             <Link to='/'>
             <img className="nav--logo h-24 cursor-pointer" src={Logo} />
             </Link>
