@@ -1,7 +1,30 @@
+import { useRef } from "react";
 import React from "react"
 import { Link } from "react-router-dom";
+import { useAuth } from "../utils/AuthContext";
 
 export default function Signup(){
+    const registerForm = useRef(null)
+  const {registerUser} = useAuth()
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+
+    const name = registerForm.current.name.value
+    const email = registerForm.current.email.value
+    const password1 = registerForm.current.password1.value
+    const password2 = registerForm.current.password2.value
+
+    if(password1 !== password2){
+        alert('Passwords did not match!')
+        return 
+    }
+    
+    const userInfo = {name, email, password1, password2}
+
+    registerUser(userInfo)
+}
+
     return (
 
         < div className="flex flex-col justify-center items-center" >
@@ -14,15 +37,15 @@ export default function Signup(){
                         <h4 className="text-[#4F709C] font-bold hover:cursor-pointer">
                             <Link to='/login'>Log in</Link></h4>
                     </div>
-                    <div className="flex flex-row justify-center items-center">
-                        <input type='text' className=' border-2 border-slate-200 rounded-lg px-5 py-1 mx-1 text-sm w-2/5 text-black' placeholder='First name'></input>
-                        <input type='text' className=' border-2 border-slate-200 rounded-lg px-5 py-1 mx-1 text-sm w-2/5 text-black' placeholder='Last name'></input>
+                    <form ref={registerForm} onSubmit={handleSubmit}>
+                    <div className="flex flex-col justify-center items-center">
+                    <input type='text' name="name" className=' border-2 border-slate-200 rounded-lg px-5 py-1 mx-1 text-sm  text-black' placeholder='Name'></input>
+                    <input type='email' name="email" className=' border-2 border-slate-200 rounded-lg px-5 py-1 text-sm mt-4 text-black' placeholder='Email'></input>
+                    <input type='password'  name="password1"  className=' border-2 border-slate-200 rounded-lg px-5 py-1 text-sm mt-4  text-black' placeholder='Password'></input>
+                    <input type='password'  name="password2" className=' border-2 border-slate-200 rounded-lg px-5 py-1 text-sm mt-4  text-black' placeholder='Confirm Password'></input>
+                    <button className="text-center bg-[#E5D283] text-[#213555] w-3/5 rounded-lg mt-12 mb-2 py-1 font-semibold">Sign up</button>
                     </div>
-                    <input type='text' className=' border-2 border-slate-200 rounded-lg px-5 py-1 text-sm mt-4 w-4/5 text-black' placeholder='Email'></input>
-                    <input type='text' className=' border-2 border-slate-200 rounded-lg px-5 py-1 text-sm mt-4 w-4/5 text-black' placeholder='Password'></input>
-                    <input type='text' className=' border-2 border-slate-200 rounded-lg px-5 py-1 text-sm mt-4 w-4/5 text-black' placeholder='Confirm Password'></input>
-                    <input type='text' className=' border-2 border-slate-200 rounded-lg px-5 py-1 text-sm mt-4 w-4/5 text-black' placeholder='Year of Admission'></input>
-                    <button className="text-center bg-[#E5D283] text-[#213555] w-4/5 rounded-lg mt-12 mb-2 py-1 font-semibold">Sign up</button>
+                    </form>
                 </div>
             </div>
 

@@ -9,7 +9,7 @@ export default[
     },
     {
         id:2,
-        logo: "/LogoMUN.png" ,
+        logo: "/LogoACM.png" ,
         name: "PICT ACM Student Chapter",
         abv: "PASC",
         info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -25,7 +25,7 @@ export default[
     }, 
     {
         id:4,
-        logo: "/LogoMUN.png" ,
+        logo: "/LogoTEDx.png" ,
         name: "TEDx PICT",
         abv: "TEDx PICT",
         info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",

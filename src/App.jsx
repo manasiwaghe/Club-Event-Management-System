@@ -17,6 +17,8 @@ import MUN from './components/MUN.jsx'
 import PASC from './components/PASC.jsx'
 import PISB from './components/PISB.jsx'
 import TEDx from './components/TEDx.jsx'
+import { AuthProvider } from './utils/AuthContext'
+import { Router } from 'react-router-dom'
 
 // import { Client } from 'appwrite';
 
@@ -30,6 +32,7 @@ function App() {
 
   return (
     <>
+        <AuthProvider>
       <Routes>
         <Route path='/' element={<HomePageBody />}></Route>
         <Route path='aboutus' element={<Aboutus />}></Route>
@@ -41,12 +44,14 @@ function App() {
         <Route path='PASC' element={<PASC />}></Route>
         <Route path='PISB' element={<PISB />}></Route>
         <Route path='TEDxPICT' element={<TEDx />}></Route>
-        <Route path='adminevent' element={<AdminEvent/>}></Route> 
+        {/* <Route path='adminevent' element={<AdminEvent/>}></Route>  */}
         
-        {/* <Route element={<PrivateRoutes/>}>
+        <Route element={<PrivateRoutes/>}>
           <Route path='adminevent' element={<AdminEvent/>}/> 
-        </Route> */}
+        </Route>
+         
       </Routes>
+      </AuthProvider>
     </>
   )
 }
