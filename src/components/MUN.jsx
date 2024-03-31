@@ -21,6 +21,13 @@ export default function MUN(){
 
             <div className="flex flex-col items-center justify-center bg-[#0E1724] w-full mt-28">
             <img src={tl} className="w-3/4 mb-10" />
+
+            <div className="flex flex-col justify-center items-center bg-[#222847]/65 w-2/5 text-white text-center rounded-xl px-5 py-10 m-5">
+                <h1 className="font-bold text-xl">AdLib</h1>
+                <h2 className="pt-3">DATE: 23rd and 24th Jan, 2024</h2>
+                <h2 className="">VENUE: Computer Seminar Hall</h2>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScdI_MCOqY_Oe_8shTBqtdCCZg6FUWf-2zfHdqMi97jYzoyWg/viewform?usp=sf_link"><button className="mt-5 px-5 py-1 rounded-lg text-black hover:bg-[#F4EBDB] cursor-pointer bg-[#E5D283]">Register Here</button></a>
+            </div>
             <Footer />
             </div>
         </>
